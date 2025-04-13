@@ -28,11 +28,11 @@ By creating some tables and views on top of these tables, you should be able to 
 
 This uses ideas from : https://github.com/tabular-io/docker-spark-iceberg.git
 
-It is possible to skip the rest catalog and use postgresql as catalog directly
+It is possible to skip the rest catalog and use postgresql as catalog directly. It is necessary to download the jdbc driver for postgres before you run the docker command.
+
+    curl https://jdbc.postgresql.org/download/postgresql-42.6.0.jar -o postgresql-42.6.0.jar
 
     docker compose -f docker-compose-postgres.sql up
 
-It is necessary to download the jdbc driver for postgres before the above command
 
-    curl https://jdbc.postgresql.org/download/postgresql-42.6.0.jar -o postgresql-42.6.0.jar
 
