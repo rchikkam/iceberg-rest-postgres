@@ -1,6 +1,7 @@
 This repo uses PostgreSQL as a backing store for the rest catalog.
 
 Downloading the jdbc driver for postgres is necessary before you run the docker commands:
+
     curl https://jdbc.postgresql.org/download/postgresql-42.6.0.jar -o postgresql-42.6.0.jar
 
 Use the following commands to bring up and down environments.
