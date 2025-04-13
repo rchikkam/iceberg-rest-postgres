@@ -1,5 +1,8 @@
 This repo uses PostgreSQL as a backing store for the rest catalog.
 
+Downloading the jdbc driver for postgres is necessary before you run the docker commands:
+    curl https://jdbc.postgresql.org/download/postgresql-42.6.0.jar -o postgresql-42.6.0.jar
+
 Use the following commands to bring up and down environments.
 
     docker compose up
@@ -28,9 +31,7 @@ By creating some tables and views on top of these tables, you should be able to 
 
 This uses ideas from : https://github.com/tabular-io/docker-spark-iceberg.git
 
-It is possible to skip the rest catalog and use postgresql as catalog directly. It is necessary to download the jdbc driver for postgres before you run the docker command.
-
-    curl https://jdbc.postgresql.org/download/postgresql-42.6.0.jar -o postgresql-42.6.0.jar
+It is possible to skip the rest catalog and use postgresql as catalog directly. 
 
     docker compose -f docker-compose-postgres.sql up
 
